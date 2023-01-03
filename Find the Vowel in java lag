@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+       Scanner obj=new Scanner(System.in);
+       String str;
+       int count=0,i,l;
+       char c;
+       System.out.println("inter the string");
+       str=obj.nextLine();
+       l=str.length();
+       for(i=0;i<l;i++)
+       {
+           c=str.charAt(i);
+           if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
+           count++;
+           
+       }
+       System.out.println("No of Vowel:"+count);
+    }
+}
